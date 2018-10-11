@@ -176,7 +176,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &215173346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -247,6 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d1b53dba83865468ab7eabcdb3aacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  topSpeed: 5
+  acceleration: 10
+  jumpPower: 250
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +321,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1.95, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -362,6 +365,10 @@ Prefab:
     - target: {fileID: 4666099557182368, guid: a47e02d4f64c3fa419775e7aea78ec98, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666099557182368, guid: a47e02d4f64c3fa419775e7aea78ec98, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3.4625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a47e02d4f64c3fa419775e7aea78ec98, type: 2}
